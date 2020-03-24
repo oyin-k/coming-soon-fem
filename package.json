@@ -1,0 +1,22 @@
+{
+  "name": "coming-soon-fem",
+  "version": "1.0.0",
+  "description": "coming soon landing",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass src/sass/main.scss dist/css/main.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oyin-k/coming-soon-fem.git"
+  },
+  "author": "Oyinkan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oyin-k/coming-soon-fem/issues"
+  },
+  "homepage": "https://github.com/oyin-k/coming-soon-fem#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
