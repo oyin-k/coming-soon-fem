@@ -1,0 +1,18 @@
+/* Colors */
+
+//Primary - Red
+$color-primary-desaturated: hsl(0, 36%, 70%);
+$color-primary-soft: hsl(0, 93%, 68%);
+
+//Neutral
+$color-grey-dark-red: hsl(0, 6%, 24%);
+
+// Gradients
+$gradient-1: linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%);
+$gradient-2: linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%);
+
+/* Fonts */
+
+$font-tiny: normal 400 1.2rem/2rem 'Josefin Sans';
+$font-medium: normal 400 1.6rem/2.6rem 'Josefin Sans';
+$font-big: normal 600 4.8rem/5rem 'Josefin Sans';
