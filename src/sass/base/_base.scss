@@ -1,4 +1,57 @@
-* {
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+// .container {
+//     background-color: #88d8b0;
+//     padding: 10px;
+//     box-sizing: border-box;
+//     &__row {
+//       background-color: #ffeead;
+//     }
+//     &__col {
+//       height: 30px;
+//       background-color: #ff6f69;
+//       outline: 	1px solid #ffcc5c;
+//       margin: 10px 0;
+//       display: flex;
+//       align-items: center;
+//       justify-content: space
+//       color: #fff;
+//     }
+//   }
+
+.container {
+    &-fluid {
+        background-color: #88d8b0;
+        padding: 1rem;
+    }
+    
+    &__row {
+        background-color: #ffeead;
+    }
+
+}
+
+[class*="container__col-"] {
+    height: 3rem;
+    background-color: $color-primary-soft;
+    color: #fff;
+    outline: 1px solid #ffcc5c;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }

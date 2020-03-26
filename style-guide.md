@@ -31,5 +31,5 @@ The designs were created to the following widths:
 
 ### Font
 
-- Family: [Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans)
+- Family: Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans)
 - Weights: 300, 400, 600
