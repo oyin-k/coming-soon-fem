@@ -1,17 +1,20 @@
-@mixin small-breakpoint {
-    @media (min-width: #{$mobile}) {
-        @content;
-    }
-}
+// MEDIA QUERIES (DESKTOP FIRST)
 
-@mixin medium-breakpoint {
-    @media (min-width: #{$tablet}) {
-        @content;
-    }
-}
 
-@mixin large-breakpoint {
-    @media (min-width: #{$desktop}) {
-        @content;
+@mixin responsive($breakpoint) {
+    @if $breakpoint == phone-port {
+        @media (max-width: 27em) { @content }; // 420px
+    }
+
+    @if $breakpoint == tab-port {
+        @media (max-width: 64em) { @content }; // 768px
+    }
+
+    @if $breakpoint == small-desktop {
+        @media (max-width: 64em) { @content }; // 1024px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media (min-width: 80em) { @content }; // 1280px
     }
 }

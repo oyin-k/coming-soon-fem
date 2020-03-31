@@ -11,6 +11,15 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 64em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 64em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 27em) {
+    html {
+      font-size: 25%; } }
 
 body {
   box-sizing: border-box; }
@@ -80,7 +89,13 @@ body {
   background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
   border: none;
   border-radius: 10rem;
-  padding: 2rem 4rem; }
+  padding: 2rem 4rem;
+  box-shadow: 0 20px 42px #ce9797cc; }
+  .main-content__cta:hover {
+    background: linear-gradient(135deg, #fdf1f1, #f09d9d);
+    cursor: pointer;
+    box-shadow: 0 20px 28px #ce9797cc;
+    transition: all .2s; }
 
 .landing-image {
   flex: 0 0 42%; }

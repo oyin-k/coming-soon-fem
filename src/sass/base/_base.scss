@@ -7,7 +7,20 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 62.5%; //1rem = 10px
+
+
+    @include responsive(small-desktop) {
+        font-size: 50%; //1rem = 8px;
+    }
+
+    @include responsive(tab-port) {
+        font-size: 56.25%; //1rem = 9px;
+    }
+
+    @include responsive(phone-port) {
+        font-size: 25%; //1rem = 4px;
+    }
 }
 
 body {
