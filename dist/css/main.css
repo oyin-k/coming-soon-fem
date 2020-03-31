@@ -28,3 +28,64 @@ body {
 .container__row {
   display: flex;
   width: 100%; }
+
+.site-info {
+  flex: 0 0 58%;
+  padding-top: 6.5rem;
+  padding-left: 16.5rem;
+  background-image: url("../../../images/bg-pattern-desktop.svg"); }
+  .site-info__logo-box {
+    margin-bottom: 8.6rem; }
+
+.main-content__heading-text-box {
+  margin-bottom: 2.2rem;
+  max-width: 2rem; }
+
+.main-content__heading {
+  font-size: 6.4rem;
+  text-transform: uppercase;
+  letter-spacing: 1.7rem;
+  line-height: 7rem; }
+  .main-content__heading .heading--light {
+    display: block;
+    font-weight: 300;
+    color: #ce9797; }
+  .main-content__heading .heading--heavy {
+    color: #413a3a; }
+
+.main-content__body-text-box {
+  width: 44.2rem;
+  color: #ce9797;
+  margin-bottom: 4rem; }
+
+.main-content__body {
+  font-size: 1.6rem; }
+
+.main-content__user-email {
+  width: 42.2rem;
+  display: flex; }
+
+.main-content__input-field {
+  border: 1px solid #ce9797;
+  border-radius: 10rem;
+  padding: 2rem 3rem;
+  width: 100%;
+  font-size: 1.6rem;
+  margin-right: -9.25rem;
+  color: #413a3a; }
+  .main-content__input-field::placeholder {
+    color: #e1d1d1; }
+
+.main-content__cta {
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  border: none;
+  border-radius: 10rem;
+  padding: 2rem 4rem; }
+
+.landing-image {
+  flex: 0 0 42%; }
+  .landing-image__img {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: top; }
