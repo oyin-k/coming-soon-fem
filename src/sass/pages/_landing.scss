@@ -2,6 +2,7 @@
     flex: 0 0 58%;
     padding-top: 6.5rem;
     padding-left: 16.5rem;
+    background-image: url("../../../images/bg-pattern-desktop.svg");
 
     &__logo-box {
         margin-bottom: 8.6rem;
@@ -60,20 +61,12 @@
         }
     }
 
-    
-
     &__cta {
         background: $gradient-2;
         border: none;
         border-radius: 10rem;
         padding: 2rem 4rem;
     }
-
-    &__cta-icon {
-
-    }
-
-    
 }
 
 .landing-image {

@@ -13,8 +13,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box;
-  background-image: url("../../../images/bg-pattern-desktop.svg"); }
+  box-sizing: border-box; }
 
 body {
   font-family: 'Josefin Sans', sans-serif;
@@ -33,7 +32,8 @@ body {
 .site-info {
   flex: 0 0 58%;
   padding-top: 6.5rem;
-  padding-left: 16.5rem; }
+  padding-left: 16.5rem;
+  background-image: url("../../../images/bg-pattern-desktop.svg"); }
   .site-info__logo-box {
     margin-bottom: 8.6rem; }
 
