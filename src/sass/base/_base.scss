@@ -9,8 +9,7 @@
 html {
     font-size: 62.5%; //1rem = 10px
 
-
-    @include responsive(small-desktop) {
+    @include responsive(laptop) {
         font-size: 50%; //1rem = 8px;
     }
 
@@ -19,7 +18,7 @@ html {
     }
 
     @include responsive(phone-port) {
-        font-size: 25%; //1rem = 4px;
+        font-size: 75%; //1rem = 12px;
     }
 }
 

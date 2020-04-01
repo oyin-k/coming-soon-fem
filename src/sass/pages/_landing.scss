@@ -4,15 +4,67 @@
     padding-left: 16.5rem;
     background-image: url("../../../images/bg-pattern-desktop.svg");
 
+    @include responsive(tab-land) {
+        padding-left: 5rem;
+        // justify-content: center;
+    }
+
+    @include responsive(tab-port) {
+        padding-left: 0;
+    }
+
+    @include responsive(phone-port) {
+        padding-top: 5.3333333333rem;
+    }
+
     &__logo-box {
         margin-bottom: 8.6rem;
+
+        @include responsive(tab-port) {
+            position: fixed;
+            top: 0;
+            background-color: #fff;
+            width: 100%;
+            padding: 1.5rem 5rem;
+            margin-bottom: 0;
+        }
+
+        @include responsive(phone-port) {
+            padding: 1.66667rem;
+        }
+    }
+
+    &__logo {
+        @include responsive(tab-port) {
+            height: 3rem;
+        }
+
+        @include responsive(phone-port) {
+            height: 2rem;
+        }
     }
 }
 
 .main-content {
+
+    @include responsive(tab-port) {
+        padding: 0 5rem 6rem;
+        text-align: center;
+    }
+
+    @include responsive(phone-port) {
+        padding: 0 1.66667rem 4rem;
+    }
+
     &__heading-text-box {
         margin-bottom: 2.2rem;
         max-width: 2rem;
+
+        @include responsive(tab-port) {
+            max-width: 100%;
+            display: flex;
+            justify-content: center;
+        }
     }
 
     &__heading {
@@ -21,8 +73,18 @@
         letter-spacing: 1.7rem;
         line-height: 7rem;
 
+        @include responsive(tab-port) {
+            width: 42rem;
+        }
+
+        @include responsive(phone-port) {
+            font-size: 3.4rem;
+            letter-spacing: 1rem;
+            line-height: 4rem;
+        }
+
         .heading--light {
-            display: block;
+            // display: block;
             font-weight: 300;
             color: $color-primary-desaturated;
         }
@@ -36,15 +98,49 @@
         width: 44.2rem;
         color: $color-primary-desaturated;
         margin-bottom: 4rem;
+
+        @include responsive(laptop) {
+            width: 53.2rem;
+        }
+
+        @include responsive(tab-port) {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        
     }
 
     &__body {
         font-size: 1.6rem;
+
+        @include responsive(laptop) {
+            font-size: 2rem; 
+        }
+
+        @include responsive(tab-port) {
+            width: 53.2rem;
+        }
+
+        @include responsive(phone-port) {
+            font-size: 1.1666666667rem;
+            width: 26rem;
+        }
     }
 
     &__user-email {
         width: 42.2rem;
         display: flex;
+
+        @include responsive(laptop) {
+            width: 53.2rem;
+        }
+
+        @include responsive(tab-port) {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
     }
     
     &__input-field {
@@ -56,6 +152,22 @@
         margin-right: -9.25rem;
         color: $color-grey-dark-red;
 
+        @include responsive(laptop) {
+            font-size: 2rem; 
+        }
+
+        @include responsive(tab-port) {
+            width: 53.2rem;
+        }
+
+        @include responsive(phone-port) {
+            padding: 1.3333333333rem 2rem;
+            font-size: 1.1666666667rem;
+            width: 100%;
+            margin-right: -4.25rem;
+        }
+
+
         &::placeholder {
             color: $color-primary-grey;
         }
@@ -65,8 +177,17 @@
         background: $gradient-2;
         border: none;
         border-radius: 10rem;
-        padding: 2rem 4rem;
+        padding: 2rem 5rem;
         box-shadow: 0 20px 42px $color-button-shadow;
+
+        @include responsive(tab-land) {
+            padding: 2rem 5rem;
+        }
+
+        @include responsive(phone-port) {
+            padding: 1.3333333333rem 4rem;
+            font-size: 1.1666666667rem;
+        }
 
         &:hover {
             background: $gradient-hover;
@@ -79,11 +200,27 @@
 
 .landing-image {
     flex: 0 0 42%;
+    background-image: url("../../../images/hero-desktop.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
 
-    &__img {
-        height: 100vh;
+    @include responsive(tab-port) {
+        flex: 0 0 auto;
+        background-size: cover;
         width: 100%;
-        object-fit: cover;
-        object-position: top;
+        height: 30rem;
     }
+
+    @include responsive(phone-port) {
+        background-image: url("../../../images/hero-mobile.jpg");
+        margin-top: 5.9166666667rem;
+        height: 20.5rem;
+    }
+
+    // &__img {
+    //     height: 100vh;
+    //     width: 100%;
+    //     object-fit: cover;
+    //     object-position: top;
+    // }
 }
