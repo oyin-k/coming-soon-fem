@@ -113,25 +113,6 @@ body {
   @media (max-width: 27em) {
     .site-info {
       padding-top: 5.3333333333rem; } }
-  .site-info__logo-box {
-    margin-bottom: 8.6rem; }
-    @media (max-width: 55.5em) {
-      .site-info__logo-box {
-        position: fixed;
-        top: 0;
-        background-color: #fff;
-        width: 100%;
-        padding: 1.5rem 5rem;
-        margin-bottom: 0; } }
-    @media (max-width: 27em) {
-      .site-info__logo-box {
-        padding: 1.66667rem; } }
-  @media (max-width: 55.5em) {
-    .site-info__logo {
-      height: 3rem; } }
-  @media (max-width: 27em) {
-    .site-info__logo {
-      height: 2rem; } }
 
 @media (max-width: 55.5em) {
   .main-content {
@@ -141,6 +122,57 @@ body {
 @media (max-width: 27em) {
   .main-content {
     padding: 0 1.66667rem 4rem; } }
+
+.main-content__user-email {
+  width: 42.2rem;
+  display: flex; }
+  @media (max-width: 82em) {
+    .main-content__user-email {
+      width: 53.2rem; } }
+  @media (max-width: 55.5em) {
+    .main-content__user-email {
+      width: 100%;
+      display: flex;
+      justify-content: center; } }
+
+.landing-image {
+  flex: 0 0 42%;
+  background-image: url("../../../images/hero-desktop.jpg");
+  background-position: center top;
+  background-repeat: no-repeat; }
+  @media (max-width: 55.5em) {
+    .landing-image {
+      flex: 0 0 auto;
+      background-size: cover;
+      width: 100%;
+      height: 30rem; } }
+  @media (max-width: 27em) {
+    .landing-image {
+      background-image: url("../../../images/hero-mobile.jpg");
+      margin-top: 5.9166666667rem;
+      height: 20.5rem; } }
+
+.site-info__logo-box {
+  margin-bottom: 8.6rem; }
+  @media (max-width: 55.5em) {
+    .site-info__logo-box {
+      position: fixed;
+      top: 0;
+      background-color: #fff;
+      width: 100%;
+      padding: 1.5rem 5rem;
+      margin-bottom: 0; } }
+  @media (max-width: 27em) {
+    .site-info__logo-box {
+      padding: 1.66667rem; } }
+
+@media (max-width: 55.5em) {
+  .site-info__logo {
+    height: 3rem; } }
+
+@media (max-width: 27em) {
+  .site-info__logo {
+    height: 2rem; } }
 
 .main-content__heading-text-box {
   margin-bottom: 2.2rem;
@@ -195,32 +227,3 @@ body {
     .main-content__body {
       font-size: 1.1666666667rem;
       width: 26rem; } }
-
-.main-content__user-email {
-  width: 42.2rem;
-  display: flex; }
-  @media (max-width: 82em) {
-    .main-content__user-email {
-      width: 53.2rem; } }
-  @media (max-width: 55.5em) {
-    .main-content__user-email {
-      width: 100%;
-      display: flex;
-      justify-content: center; } }
-
-.landing-image {
-  flex: 0 0 42%;
-  background-image: url("../../../images/hero-desktop.jpg");
-  background-position: center top;
-  background-repeat: no-repeat; }
-  @media (max-width: 55.5em) {
-    .landing-image {
-      flex: 0 0 auto;
-      background-size: cover;
-      width: 100%;
-      height: 30rem; } }
-  @media (max-width: 27em) {
-    .landing-image {
-      background-image: url("../../../images/hero-mobile.jpg");
-      margin-top: 5.9166666667rem;
-      height: 20.5rem; } }
