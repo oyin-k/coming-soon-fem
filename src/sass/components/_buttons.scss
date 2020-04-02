@@ -1,0 +1,29 @@
+%button {
+    background: $button-background;
+    border: none;
+    border-radius: $button-border-radius;
+    padding: 2rem 5rem;
+    box-shadow: $box-shadow;
+}
+
+%button-hover {
+    background: $button-background-hover;
+    cursor: pointer;
+    box-shadow: $box-shadow-hover;
+    transition: all .2s;
+}
+
+.main-content {
+    &__cta {
+        @extend %button;
+    
+        @include responsive(phone-port) {
+            padding: 1.3333333333rem 4rem;
+            font-size: 1.1666666667rem;
+        }
+    
+        &:hover {
+            @extend %button-hover;
+        }
+    }
+}

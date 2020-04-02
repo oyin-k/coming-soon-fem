@@ -1,0 +1,48 @@
+%form {
+    border: $form-border;
+    border-radius: 10rem;
+    padding: 2rem 3rem;
+    width: 100%;
+    font-size: 1.6rem;
+    margin-right: -11.2rem;
+    color: $color-grey-dark-red;
+}
+
+%form-focus {
+    border-color: $form-border-focus;
+    outline: 0;
+    box-shadow: $form-focus-box-shadow;
+    transition: box-shadow 0.15s ease-in-out 0s;
+}
+
+
+.main-content {
+    &__input-field {
+        @extend %form;
+    
+        &:focus {
+            @extend %form-focus;
+        }
+    
+        @include responsive(laptop) {
+            font-size: 2rem; 
+            margin-right: -11.5rem;
+        }
+    
+        @include responsive(tab-port) {
+            width: 53.2rem;
+        }
+    
+        @include responsive(phone-port) {
+            padding: 1.3333333333rem 2rem;
+            font-size: 1.1666666667rem;
+            width: 100%;
+            margin-right: -9rem;
+        }
+    
+    
+        &::placeholder {
+            color: $placeholder;
+        }
+    }
+}
