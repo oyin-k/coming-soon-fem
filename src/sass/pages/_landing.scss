@@ -68,7 +68,7 @@
     }
 
     &__heading {
-        font-size: 6.4rem;
+        font-size: $h1-font-size;
         text-transform: uppercase;
         letter-spacing: 1.7rem;
         line-height: 7rem;
@@ -78,7 +78,7 @@
         }
 
         @include responsive(phone-port) {
-            font-size: 3.4rem;
+            font-size: $h1-font-size-mobile;
             letter-spacing: 1rem;
             line-height: 4rem;
         }
@@ -140,60 +140,6 @@
             width: 100%;
             display: flex;
             justify-content: center;
-        }
-    }
-    
-    &__input-field {
-        border: 1px solid $color-primary-desaturated;
-        border-radius: 10rem;
-        padding: 2rem 3rem;
-        width: 100%;
-        font-size: 1.6rem;
-        margin-right: -9.25rem;
-        color: $color-grey-dark-red;
-
-        @include responsive(laptop) {
-            font-size: 2rem; 
-        }
-
-        @include responsive(tab-port) {
-            width: 53.2rem;
-        }
-
-        @include responsive(phone-port) {
-            padding: 1.3333333333rem 2rem;
-            font-size: 1.1666666667rem;
-            width: 100%;
-            margin-right: -4.25rem;
-        }
-
-
-        &::placeholder {
-            color: $color-primary-grey;
-        }
-    }
-
-    &__cta {
-        background: $gradient-2;
-        border: none;
-        border-radius: 10rem;
-        padding: 2rem 5rem;
-        box-shadow: 0 20px 42px $color-button-shadow;
-
-        @include responsive(tab-land) {
-            padding: 2rem 5rem;
-        }
-
-        @include responsive(phone-port) {
-            padding: 1.3333333333rem 4rem;
-            font-size: 1.1666666667rem;
-        }
-
-        &:hover {
-            background: $gradient-hover;
-            cursor: pointer;
-            box-shadow: 0 20px 28px $color-button-shadow;
-            transition: all .2s;
         }
     }
 }
