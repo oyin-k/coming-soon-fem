@@ -19,7 +19,7 @@
             flex-direction: column-reverse;
         }
    }
-   
+
 }
 
 .site-info {
@@ -57,6 +57,7 @@
     &__user-email {
         width: 42.2rem;
         display: flex;
+        flex-direction: column;
 
         @include responsive(laptop) {
             width: 53.2rem;

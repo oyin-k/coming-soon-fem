@@ -3,7 +3,7 @@
     border-radius: 10rem;
     padding: 2rem 3rem;
     width: 100%;
-    font-size: 1.6rem;
+    font-size: $form-font-size;
     margin-right: -11.2rem;
     color: $color-grey-dark-red;
 }
@@ -17,6 +17,64 @@
 
 
 .main-content {
+    &__user-email {
+        .input-requirements {
+            font-size: $form-font-size;
+            font-style: italic;
+            list-style: disc;
+            list-style-position: inside;
+            color: $color-grey;
+            margin-left: 1rem;
+            padding-top: 1rem;
+
+            @include responsive(tab-port) {
+                margin-left: -10rem;
+            }
+
+            @include responsive(phone-port) {
+                margin-left: -2.55rem;
+                font-size: $form-font-size-mobile;
+            }
+
+            li {
+                &.invalid {
+                    color: $color-error;
+                }
+                &.valid {
+                    color: $color-success;
+
+                    &::after {
+                        display: inline-block;
+                        padding-left: 1rem;
+                        content: "\2713";
+                    }
+                }
+            }
+            
+        }
+    }
+
+    &__user-email-form {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    //hide and show related .input-requirements when interacting with input
+
+    &__user-email-form + .input-requirements {
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 1s ease-out;
+    }
+
+    &__user-email-form:hover + .input-requirements,
+    &__user-email-form:focus + .input-requirements,
+    &__user-email-form:active + .input-requirements {
+        max-height: 20rem;
+        transition: max-height 1s ease-in;
+    }
+
     &__input-field {
         @extend %form;
     
@@ -35,7 +93,7 @@
     
         @include responsive(phone-port) {
             padding: 1.3333333333rem 2rem;
-            font-size: 1.1666666667rem;
+            font-size: $form-font-size-mobile;
             width: 100%;
             margin-right: -9rem;
         }
