@@ -57,7 +57,6 @@
     &__user-email {
         width: 42.2rem;
         display: flex;
-        flex-direction: column;
 
         @include responsive(laptop) {
             width: 53.2rem;
@@ -68,6 +67,18 @@
             display: flex;
             justify-content: center;
         }
+    }
+
+    &__input-field {
+        order: 1;
+    }
+
+    &__cta {
+        order: 2;
+    }
+
+    .input-requirements {
+        order: 3;
     }
 }
 

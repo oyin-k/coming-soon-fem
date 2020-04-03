@@ -24,15 +24,19 @@
             list-style: disc;
             list-style-position: inside;
             color: $color-grey;
-            margin-left: 1rem;
+            margin-left: -4.5rem;
             padding-top: 1rem;
 
+            @include responsive(laptop) {
+                margin-left: -15.5rem;
+            }
+
             @include responsive(tab-port) {
-                margin-left: -10rem;
+                margin-left: -13rem;
             }
 
             @include responsive(phone-port) {
-                margin-left: -2.55rem;
+                margin-left: -1rem;
                 font-size: $form-font-size-mobile;
             }
 
@@ -57,20 +61,23 @@
     &__user-email-form {
         width: 100%;
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
+        
     }
 
     //hide and show related .input-requirements when interacting with input
 
-    &__user-email-form + .input-requirements {
+
+    &__input-field + .input-requirements {
         overflow: hidden;
         max-height: 0;
         transition: max-height 1s ease-out;
     }
 
-    &__user-email-form:hover + .input-requirements,
-    &__user-email-form:focus + .input-requirements,
-    &__user-email-form:active + .input-requirements {
+    &__input-field:hover + .input-requirements,
+    &__input-field:focus + .input-requirements,
+    &__input-field:active + .input-requirements {
         max-height: 20rem;
         transition: max-height 1s ease-in;
     }
@@ -98,6 +105,10 @@
             margin-right: -9rem;
         }
     
+        &.valid {
+            border-color: $color-success;
+            box-shadow: 0px 0px 0px 3px rgba(46, 204, 113, 0.21);
+        }
     
         &::placeholder {
             color: $placeholder;

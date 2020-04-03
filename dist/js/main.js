@@ -1,20 +1,22 @@
-function CustomValidation (input) {
-    this.invalidities = [];
-    this.validity = [];
 
-    this.inputNode = input;
+let email = document.querySelector('.main-content__input-field');
 
-    this.register();
-}
+function formValidation(input) {
+    
+    let element = document.querySelector('.input-requirements');
+    let requirementFeedback = element.children[0];
 
-CustomValidation.prototype = {
-    addInvalidity: function(message) {
-        this.invalidities.push(message);
-    },
-    getInvalidities: function() {
-        return this.invalidities.join('. \n');
-    },
-    checkValidity: function(input) {
-        
+    if ( input.value.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g) ) {
+        requirementFeedback.classList.add('valid');
+        email.classList.add('valid');
+        requirementFeedback.classList.remove('invalid');
+    } else {
+        requirementFeedback.classList.remove('valid');
+        email.classList.remove('valid');
+        requirementFeedback.classList.add('invalid');
     }
 }
+
+email.addEventListener('keyup', function() {
+    formValidation(email);
+});
