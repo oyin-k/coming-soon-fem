@@ -10,8 +10,12 @@ $color-primary-soft: hsl(0, 93%, 68%);
 $color-primary-grey: hsl(0, 21%, 85%);
 
 $color-grey-dark-red: hsl(0, 6%, 24%); //Neutral
+$color-grey: rgb(150,150,150);
 
 $color-button-shadow: #c08e8eec; //Shadow
+
+$color-error: #e74c3c;
+$color-success: #2ecc71;
 
 // Gradients
 $gradient-1: linear-gradient( 135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%) );
@@ -53,6 +57,8 @@ $button-background-hover: $gradient-hover;
 $button-border-radius: $border-radius;
 
 /* FORM */
+$form-font-size: 1.6rem;
+$form-font-size-mobile: 1.1666666667rem;
 $form-border: $border-width $border-style $border-color;
 $form-border-focus: $color-primary-soft;
 $form-focus-box-shadow: 0px 0px 0px 3px hsla(0, 93%, 68%, 0.21);
