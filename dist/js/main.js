@@ -1,5 +1,6 @@
 
-let email = document.querySelector('.main-content__input-field');
+let userEmailInput = document.querySelector('.main-content__input-field');
+let form = document.querySelector('.main-content__user-email-form');
 
 function formValidation(input) {
     
@@ -8,15 +9,21 @@ function formValidation(input) {
 
     if ( input.value.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g) ) {
         requirementFeedback.classList.add('valid');
-        email.classList.add('valid');
+        userEmailInput.classList.add('valid');
         requirementFeedback.classList.remove('invalid');
     } else {
         requirementFeedback.classList.remove('valid');
-        email.classList.remove('valid');
+        userEmailInput.classList.remove('valid');
         requirementFeedback.classList.add('invalid');
     }
 }
 
-email.addEventListener('keyup', function() {
-    formValidation(email);
+userEmailInput.addEventListener('keyup', () => {
+    formValidation(userEmailInput);
 });
+
+form.addEventListener('submit', e => {
+    e.preventDefault();
+    console.log(e.target.email.value);
+    e.target.email.value = '';
+})
